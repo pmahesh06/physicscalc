@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Physics Calculator</title> 
+    <link rel="stylesheet" href="style.css"> 
+  </head> 
+  <body> 
+    <h1>Physics Calculator</h1> 
+    <div class="calculator"> 
+      <div class="input-group"> 
+        <label for="option">Select an option:</label> 
+        <select id="option"> 
+          <option value="Displacement">Displacement</option> 
+          <option value="Final Velocity">Final Velocity</option> 
+          <option value="Acceleration">Acceleration</option> 
+          <option value="Time">Time</option> 
+        </select> 
+      </div>
+
+  <div class="input-group">
+    <label for="Vi">Initial Velocity (m/s):</label>
+    <input type="text" id="Vi">
+  </div>
+
+  <div class="input-group">
+    <label for="Vf">Final Velocity (m/s):</label>
+    <input type="text" id="Vf">
+  </div>
+
+  <div class="input-group">
+    <label for="t">Time (s):</label>
+    <input type="text" id="t">
+  </div>
+
+  <div class="input-group">
+    <label for="a">Acceleration (m/s^2):</label>
+    <input type="text" id="a">
+  </div>
+
+  <button id="calculate-btn">Calculate</button>
+
+  <div class="result">
+    <label for="answer">Result:</label>
+    <input type="text" id="answer" readonly>
+  </div>
+  <div class="error-message" id="error-message"></div>
+</div>
+
+<script src="script.js"></script>
+</body> </html>

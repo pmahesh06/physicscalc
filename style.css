@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* Set global styles */
+body {
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #ffffff;
+}
+h1 {
+text-align: center;
+color: #333;
+font-weight: 500;
+}
+/* Style the calculator container */
+.calculator {
+max-width: 400px;
+margin: 0 auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease-in-out;
+}
+.calculator:hover {
+transform: scale(1.01);
+}
+/* Style the input groups */
+.input-group {
+margin-bottom: 10px;
+}
+.input-group label {
+display: block;
+margin-bottom: 5px;
+color: #333;
+font-weight: 500;
+}
+.input-group input, .input-group select {
+width: 100%;
+padding: 10px;
+border-radius: 3px;
+border: 1px solid #ccc;
+transition: border 0.3s ease-in-out;
+}
+.input-group input:focus, .input-group select:focus {
+border-color: #007BFF;
+}
+/* Style the result container */
+.result {
+margin-top: 10px;
+font-weight: bold;
+text-align: center;
+}
+/* Style the error message */
+#error-message {
+color: red;
+margin-top: 10px;
+}
+/* Style the calculate button */
+#calculate-btn {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: #007BFF;
+color: #ffffff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+#calculate-btn:hover {
+background-color: #0056b3;
+}
